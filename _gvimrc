@@ -1,0 +1,5 @@
+" http://juliankay.com/development/setting-up-vim-to-work-with-powershell/
+" Only applies to Windows
+
+set shell=powershell
+set shellcmdflag=-command
