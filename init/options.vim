@@ -121,6 +121,7 @@ set background=dark
 if has("gui_running")
     colorscheme solarized
 
+    " See http://4thinker.com/vim-airline.html on how to setup vim-airline & install Consolas powerline fonts
     if has ('win32') || has('win64') 
       set guifont=Powerline_Consolas:h9:cANSI
     else
