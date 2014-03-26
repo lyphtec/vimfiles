@@ -45,14 +45,8 @@ del ..\_vsvimrc
 goto copyVsvim
 
 :copyMain
-echo Checking out Vundle
-git submodule update --init
-
 echo Linking ../_vimrc to vimrc
 ln vimrc ../_vimrc
-
-echo Vundling
-vim +BundleInstall +qall
 goto checkGvim
 
 :copyGvimrc
@@ -63,7 +57,14 @@ goto checkVsvim
 :copyVsvim
 echo Linking ../_vsvimrc to _vsvimrc
 ln _vsvimrc ../_vsvimrc
-goto end
+goto setup
+
+:setup
+echo Checking out Vundle
+git submodule update --init
+
+echo Vundling
+vim +BundleInstall +qall
 
 :end
 echo Done
