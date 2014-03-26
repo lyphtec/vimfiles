@@ -39,6 +39,7 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'kongo2002/fsharp-vim'
 Bundle 'mattn/emmet-vim'
 Bundle 'plasticboy/vim-markdown'
+Bundle 'leafgarland/typescript-vim'
 
 
 filetype plugin indent on   " Automatically detect file types
