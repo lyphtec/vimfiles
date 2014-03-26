@@ -116,6 +116,8 @@ set comments=sl:/*,mb:\ *,ex:\ */,O://,b:#,:%,:XCOMM,n:>,fb:-     " These things
 set showfulltag             " When completing by tag, show the whole tag, not just the function name
 
 " Set up the window colors and size
+set background=dark
+
 if has("gui_running")
     colorscheme solarized
 
