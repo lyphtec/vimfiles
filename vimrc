@@ -26,7 +26,7 @@ endif
 
 Bundle 'gmarik/vundle'
 Bundle 'altercation/vim-colors-solarized'
-Bundle 'bling/vim-airline'                  " vim-airline : http://4thinker.com/vim-airline.html
+Bundle 'bling/vim-airline'
 Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdtree'
 Bundle 'michaeljsmith/vim-indent-object'
