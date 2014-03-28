@@ -96,9 +96,12 @@ set splitbelow
 set splitright
 
 set nolist                    " don't display unprintable characters, f12 - switches
-set listchars=tab:\ ·,eol:¬
-set listchars+=trail:·
-set listchars+=extends:»,precedes:«
+" only good for gVim
+if has('gui_running')
+  set listchars=tab:\ ·,eol:¬
+  set listchars+=trail:·
+  set listchars+=extends:»,precedes:«
+endif
 map <silent> <F12> :set invlist<CR>
 
 set lazyredraw              " Don't update the display while executing macros

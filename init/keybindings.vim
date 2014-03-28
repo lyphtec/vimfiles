@@ -6,15 +6,22 @@ nmap <silent> \n :set invhls<CR>:set hls?<CR>         " Turn off that stupid hig
 nmap <silent> <Space> :set invhls<CR>:set hls?<CR>
 nmap <silent> \w :set invwrap<CR>:set wrap?<CR>       " set text wrapping toggles
 
-map <silent> <F12> :set invlist<CR>       " F12 to switch display of unprintable characters
-nmap <silent> \ev :e ~/_vimrc<CR>         " Edit the vimrc file
-nmap <silent> \cd :lcd %:h<CR>            " cd to the directory containing the file in the buffer
+map <silent> <F12> :set invlist<CR>             " F12 to switch display of unprintable characters
+
+" Edit the vimrc file
+if has('win32')
+  nmap <silent> \ev :e ~/vimfiles/vimrc<CR>
+else
+  nmap <silent> \ev :e ~/.vimrc<CR>
+endif
+
+nmap <silent> \cd :lcd %:h<CR>                  " cd to the directory containing the file in the buffer
 nmap <silent> \md :!mkdir -p %:p:h<CR>
 
-nmap <silent> \p "*p<CR>                  " Paste from clipboard
+nmap <silent> \p "*p<CR>                        " Paste from clipboard
 nmap <silent> <C-P> "*p<CR>
 
-imap <S-Space> <Esc>                      " Shift-Space in insert mode goes back to normal mode
+imap <S-Space> <Esc>                            " Shift-Space in insert mode goes back to normal mode
 
 " Make Control-direction switch between windows (like C-W h, etc)
 nmap <silent> <C-k> <C-W><C-k>
