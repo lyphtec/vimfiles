@@ -44,9 +44,9 @@ set fo-=t                      " Do no auto-wrap text using textwidth (does not 
 set nowrap
 set textwidth=0                " Don't wrap lines by default
 
-set tabstop=2                  " tab size eql 2 spaces
+set tabstop=4                  " tab size eql 2 spaces
 set softtabstop=2
-set shiftwidth=2               " default shift width for indents
+set shiftwidth=4               " default shift width for indents
 set expandtab                  " replace tabs with ${tabstop} spaces
 set smarttab                   "
 

@@ -12,8 +12,11 @@ au FileType vundle setlocal noshellslash
 " Highlight JSON files as javascript
 autocmd BufRead,BufNewFile *.json set filetype=javascript
 
+au BufNewFile,BufRead *.md set filetype=markdown
+
 " Open all folds in Markdown.
 autocmd FileType mkd normal zR
+autocmd FileType md normal zR
 
 " Set filetypes for unusual files
 au BufNewFile,BufRead *.ejs set filetype=html
