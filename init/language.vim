@@ -20,4 +20,5 @@ autocmd FileType md normal zR
 
 " Set filetypes for unusual files
 au BufNewFile,BufRead *.ejs set filetype=html
+au BufNewFile,BufRead *.vash set filetype=html
 au BufNewFile,BufRead *.jade set filetype=javascript
