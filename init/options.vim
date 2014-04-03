@@ -34,6 +34,8 @@ set incsearch               " Incrementally match the search
 set wrapscan                " set the search scan to wrap lines
 set ignorecase              " be case insensitive when search
 set smartcase               " be case sensitive when input has a capital letter
+
+set number                  " Show line numbers : http://vim.wikia.com/wiki/Display_line_numbers
 " "}}}
 
 " Formatting "{{{
