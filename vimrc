@@ -12,8 +12,6 @@
 set nocompatible            " iMproved!
 set encoding=utf-8
 filetype off
-syntax on
-
 
 " Vundle stuff
 if has('win32') || has('win64')
@@ -41,9 +39,12 @@ Bundle 'mattn/emmet-vim'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'nelstrom/vim-markdown-folding'
 Bundle 'leafgarland/typescript-vim'
+Bundle 'digitaltoad/vim-jade'
 
 
 filetype plugin indent on   " Automatically detect file types
 
 " Source init files
 runtime! init/**.vim
+
+syntax on
