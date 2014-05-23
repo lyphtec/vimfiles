@@ -168,6 +168,6 @@ let NERDTreeIgnore=[ '\.ncb$', '\.suo$', '\.obj$',
 let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
 
-let g:ctrlp_custom_ignore = '\v[\/](\.git|node_modules|obj|bower_components)$'
+let g:ctrlp_custom_ignore = '\v[\/](\.git|node_modules|obj|bower_components|bundle|package)$'
 
 " "}}}
