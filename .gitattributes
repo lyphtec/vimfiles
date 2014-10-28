@@ -1,1 +1,6 @@
-* -crlf
+* text=auto
+
+*.vim text eol=lf
+*.bat text eol=crlf
+*.sh text eol=lf
+vimrc text eol=lf
