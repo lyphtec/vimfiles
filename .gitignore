@@ -3,4 +3,4 @@ tags
 Thumbs.db
 Desktop.ini
 bundle/*
-!bundle/vundle/*
+!bundle/vundle
