@@ -64,7 +64,7 @@ echo Checking out Vundle
 git submodule update --init
 
 echo Vundling
-vim +BundleInstall +qall
+vim +PluginInstall +qall
 
 :end
 echo Done
