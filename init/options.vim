@@ -127,12 +127,12 @@ if has("gui_running")
     colorscheme solarized
 
     " See http://4thinker.com/vim-airline.html on how to setup vim-airline & install Consolas powerline fonts
-    if has ('win32') || has('win64') 
+    if has('win32') || has('win64')
       set guifont=Powerline_Consolas:h9:cANSI
     else
       set guifont=Powerline\ Consolas\ 10   " for Linux gVim
     endif
-    
+
     set mousehide             " Hide the mouse pointer while typing
 
     set guicursor=n-v-c:block-Cursor-blinkon0       " Set up the gui cursor to look nice
@@ -141,7 +141,7 @@ if has("gui_running")
     set guicursor+=i-ci:ver25-Cursor
     set guicursor+=r-cr:hor20-Cursor
     set guicursor+=sm:block-Cursor-blinkwait175-blinkoff150-blinkon175
-    set guioptions=cMg              " console dialogs, do not show menu and toolbar 
+    set guioptions=cMg              " console dialogs, do not show menu and toolbar
     set guioptions-=e               " use text tab bar, not GUI
 else
     set t_Co=256
@@ -156,6 +156,13 @@ endif
 let g:airline_powerline_fonts             = 1
 let g:airline_theme                       = 'powerlineish'
 let g:airline#extensions#tabline#enabled  = 1
+
+" syntastic options as per recommended settings -- https://github.com/scrooloose/syntastic#3-recommended-settings
+" also see http://choorucode.com/2014/11/06/how-to-use-syntastic-plugin-for-vim/
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1               " automatically load errors into loc list
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
 
 let NERDTreeShowBookmarks=1                 " Show the bookmarks table on startup
  " Don't display these kinds of files

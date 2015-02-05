@@ -1,6 +1,8 @@
 " Keybindings
 " -----------
 
+" 'jk' for <Esc> as per https://github.com/valloric/youcompleteme#i-get-weird-errors-when-i-press-ctrl-c-in-vim
+inoremap jk <Esc>
 
 nmap <silent> \n :set invhls<CR>:set hls?<CR>         " Turn off that stupid highlight search
 nmap <silent> <Space> :set invhls<CR>:set hls?<CR>

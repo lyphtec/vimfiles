@@ -33,13 +33,24 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-git'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
+Plugin 'nathanaelkane/vim-indent-guides'
+"Plugin 'kongo2002/fsharp-vim'
+
+" YCM for non Windows only for now as getting it up & running on Windows as currently a pain in the ass
+if has('unix')
+    Plugin 'Valloric/YouCompleteMe'
+    Plugin 'marijnh/tern_for_vim'
+endif
+
+" Javascript related plugins -- also see http://oli.me.uk/2013/06/29/equipping-vim-for-javascript/
+" Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
-Plugin 'kongo2002/fsharp-vim'
+Plugin 'digitaltoad/vim-jade'
+"Plugin 'leafgarland/typescript-vim'
+
 Plugin 'mattn/emmet-vim'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'nelstrom/vim-markdown-folding'
-Plugin 'leafgarland/typescript-vim'
-Plugin 'digitaltoad/vim-jade'
 
 call vundle#end()
 filetype plugin indent on   " Automatically detect file types
