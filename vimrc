@@ -37,9 +37,8 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'othree/html5.vim'
 "Plugin 'kongo2002/fsharp-vim'
 
-" YCM for non Windows only for now as getting it up & running on Windows as currently a pain in the ass
 if has('unix')
-    Plugin 'Valloric/YouCompleteMe'
+    "Plugin 'Valloric/YouCompleteMe'
 endif
 
 " Javascript related plugins -- also see http://oli.me.uk/2013/06/29/equipping-vim-for-javascript/

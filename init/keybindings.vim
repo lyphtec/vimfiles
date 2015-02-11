@@ -23,9 +23,11 @@ nmap <silent> \md :!mkdir -p %:p:h<CR>
 nmap <silent> \p "*p<CR>                        " Paste from clipboard
 nmap <silent> <C-P> "*p<CR>
 
-imap <S-Space> <Esc>                            " Shift-Space in insert mode goes back to normal mode
+" trigger omnicomplete suggestions
+inoremap <S-Space> <C-x><C-o>
 
 " Move lines using Alt + direction : see http://vim.wikia.com/wiki/Moving_lines_up_or_down
+" --- seems to only work in gvim :(
 nnoremap <A-j> :m .+1<CR>==
 nnoremap <A-k> :m .-2<CR>==
 inoremap <A-j> <Esc>:m .+1<CR>==gi

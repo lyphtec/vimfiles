@@ -12,11 +12,12 @@ au FileType vundle setlocal noshellslash
 " Highlight JSON files as javascript
 autocmd BufRead,BufNewFile *.json set filetype=javascript
 
+" Markdown filetypes
 au BufNewFile,BufRead *.md set filetype=markdown
+au BufNewFile,BufRead *.mkd set filetype=markdown
 
 " Open all folds in Markdown.
-autocmd FileType mkd normal zR
-autocmd FileType md normal zR
+autocmd FileType markdown normal zR
 
 " Set filetypes for unusual files
 au BufNewFile,BufRead *.ejs set filetype=html
@@ -30,6 +31,6 @@ autocmd QuickFixCmdPost    l* nested lwindow
 
 " Omni completion "{{{
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-autocmd FileType html,md,mkd,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 " }}}
