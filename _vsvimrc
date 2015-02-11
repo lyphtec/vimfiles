@@ -96,6 +96,9 @@ nmap <Space> :set invhls<CR>:set hls?<CR>
 nmap \p "*p<CR>
 nmap <C-P> "*p<CR>
 
+" 'jk' for <Esc> as per https://github.com/valloric/youcompleteme#i-get-weird-errors-when-i-press-ctrl-c-in-vim
+inoremap jk <Esc>
+
 " Shift-Space in insert mode
 imap <S-Space> <Esc>
 
