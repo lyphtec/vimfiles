@@ -46,17 +46,17 @@ goto copyVsvim
 
 :copyMain
 echo Linking ../_vimrc to vimrc
-ln vimrc ../_vimrc
+cmd.exe /C mklink ..\_vimrc vimrc
 goto checkGvim
 
 :copyGvimrc
 echo Linking ../_gvimrc to _gvimrc
-ln _gvimrc ../_gvimrc
+cmd.exe /C mklink ..\_gvimrc _gvimrc
 goto checkVsvim
 
 :copyVsvim
 echo Linking ../_vsvimrc to _vsvimrc
-ln _vsvimrc ../_vsvimrc
+cmd.exe /C mklink ..\_vsvimrc _vsvimrc
 goto setup
 
 :setup
@@ -65,6 +65,10 @@ git submodule update --init
 
 echo Vundling
 vim +PluginInstall +qall
+
+echo term_for_vim setup
+cd bundle\tern_for_vim
+npm install
 
 :end
 echo Done

@@ -22,7 +22,7 @@ Sounds good? (yes/no)"
 
   # deleting
   echo "You entered $CONFIRM. So I'm deleting it."
-  rm ~/.vim
+  rm -rf ~/.vim
   rm ~/.vimrc
 else
   echo "vimfiles are already deleted. You're good."

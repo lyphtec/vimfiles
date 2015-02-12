@@ -16,5 +16,8 @@ else
   echo === Vundling
   vim +PluginInstall +qall
 
+  echo === tern_for_vim setup
+  cd bundle/tern_for_vim && npm install
+
   echo === Done
 fi
