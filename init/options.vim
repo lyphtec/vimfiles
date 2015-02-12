@@ -86,11 +86,13 @@ set showcmd                 " Show the current command in the lower right corner
 
 set stl=%f\ %m\ %r\ Line:%l/%L[%p%%]\ Col:%c\ Buf:%n\ [%b][0x%B]        " Set the status line the way i like it
 
+" Folding options
 set foldenable              " turn on folding
 set foldmethod=marker       " fold on the marker
 set foldlevel=100           " don't autofold anything (but can still fold manually)
-
 set foldopen=block,insert,jump,mark,percent,quickfix,search,tag,undo      " These commands open folds
+let javaScript_fold=1
+let xml_syntax_folding=1
 
 set virtualedit=block         " Allow the cursor to go in to "invalid" places
 

@@ -34,3 +34,6 @@ autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 " }}}
+
+" Fold methods - default is marker so we need to explicitly override for specific filetypes here
+autocmd FileType xml,javascript setlocal foldmethod=syntax

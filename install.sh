@@ -9,7 +9,7 @@ else
   git submodule update --init
   cd -
 
-  echo === Linking vim directories
+  echo === Linking vim directories & config
   ln -s $PWD/vimrc $HOME/.vimrc
   ln -s $PWD $HOME/.vim
 
@@ -20,4 +20,5 @@ else
   cd bundle/tern_for_vim && npm install
 
   echo === Done
+  cd ~
 fi

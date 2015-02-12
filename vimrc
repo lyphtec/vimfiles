@@ -42,8 +42,8 @@ if has('unix')
 endif
 
 " Javascript related plugins -- also see http://oli.me.uk/2013/06/29/equipping-vim-for-javascript/
-" Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
+" Plugin 'jelera/vim-javascript-syntax'
 Plugin 'digitaltoad/vim-jade'
 " This requires python
 Plugin 'marijnh/tern_for_vim'
