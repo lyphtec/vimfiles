@@ -7,8 +7,8 @@ My portable vim configuration
 #### Linux/Mac:
 
 ```
-git clone https://github.com/lyphtec/vimfiles.git ~/.vimfiles
-cd ~/.vimfiles
+git clone https://github.com/lyphtec/vimfiles.git ~/.vim
+cd ~/.vim
 ./install.sh
 ```
 
@@ -29,8 +29,8 @@ cd vimfiles
 #### Linux/Mac:
 
 ```
-cd ~/.vimfiles
-./uninstall.sh
+cd ~
+./.vim/uninstall.sh
 ```
 
 #### Windows (from Powershell prompt):
