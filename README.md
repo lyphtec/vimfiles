@@ -14,7 +14,7 @@ cd ~/.vimfiles
 
 #### Windows (from Powershell prompt):
 
-Some plugins (eg. [tern_for_vim](marijnh/tern_for_vim)) requires python support. I'm using a pre-compiled version of Vim that has this enabled available [from here](https://bitbucket.org/Haroogan/vim-for-windows).  Obviously, you will need to have python already installed on your machine.
+Some plugins (eg. [tern_for_vim](https://github.com/marijnh/tern_for_vim)) requires python support. I'm using a pre-compiled version of Vim that has this enabled available [from here](https://bitbucket.org/Haroogan/vim-for-windows).  Obviously, you will need to have python already installed on your machine.
 
 ```
 cd ~
