@@ -1,5 +1,7 @@
-" http://juliankay.com/development/setting-up-vim-to-work-with-powershell/
-" Only applies to Windows
+" This file is only used with GVim on Windows. We can have specific settings for it here.
 
-set shell=powershell
-set shellcmdflag=-command
+
+" http://juliankay.com/development/setting-up-vim-to-work-with-powershell/
+" Seems to be problematic with +PluginInstall & +PluginUpdate... so disabled for now
+" set shell=powershell
+" set shellcmdflag=-command
