@@ -37,8 +37,11 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'othree/html5.vim'
 "Plugin 'kongo2002/fsharp-vim'
 
+" Platform specific plugins
 if has('unix')
     "Plugin 'Valloric/YouCompleteMe'
+else
+
 endif
 
 " Javascript related plugins -- also see http://oli.me.uk/2013/06/29/equipping-vim-for-javascript/
@@ -52,6 +55,10 @@ Plugin 'marijnh/tern_for_vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'nelstrom/vim-markdown-folding'
+
+" OmniSharp
+"Plugin 'OmniSharp/omnisharp-vim'
+"Plugin 'tpope/vim-dispatch'
 
 call vundle#end()
 filetype plugin indent on   " Automatically detect file types
