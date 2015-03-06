@@ -46,17 +46,17 @@ goto copyVsvim
 
 :copyMain
 echo Linking ../_vimrc to vimrc
-cmd.exe /C mklink ..\_vimrc vimrc
+cmd.exe /C mklink ..\_vimrc vimfiles\vimrc
 goto checkGvim
 
 :copyGvimrc
 echo Linking ../_gvimrc to _gvimrc
-cmd.exe /C mklink ..\_gvimrc _gvimrc
+cmd.exe /C mklink ..\_gvimrc vimfiles\_gvimrc
 goto checkVsvim
 
 :copyVsvim
 echo Linking ../_vsvimrc to _vsvimrc
-cmd.exe /C mklink ..\_vsvimrc _vsvimrc
+cmd.exe /C mklink ..\_vsvimrc vimfiles\_vsvimrc
 goto setup
 
 :setup
