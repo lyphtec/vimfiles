@@ -45,8 +45,11 @@ else
 endif
 
 " Javascript related plugins -- also see http://oli.me.uk/2013/06/29/equipping-vim-for-javascript/
-Plugin 'pangloss/vim-javascript'
+" Plugin 'pangloss/vim-javascript'
 " Plugin 'jelera/vim-javascript-syntax'
+Plugin 'othree/yajs.vim'
+Plugin 'othree/javascript-libraries-syntax.vim'
+
 Plugin 'digitaltoad/vim-jade'
 " This requires python
 Plugin 'marijnh/tern_for_vim'

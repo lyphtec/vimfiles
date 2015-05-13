@@ -183,4 +183,7 @@ let g:ctrlp_custom_ignore = '\v[\/](\.git|node_modules|obj|bower_components|bund
 
 "let g:OmniSharp_timeout = 1
 
+" https://github.com/othree/javascript-libraries-syntax.vim options
+let g:used_javascript_libs = 'underscore,angularjs,chai,jquery,jasmine'
+
 " "}}}

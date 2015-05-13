@@ -51,5 +51,9 @@ cd ~
 
 For [vim-airline](https://github.com/bling/vim-airline) support, I'm using a [pre-patched Consolas for powerline font](https://github.com/runsisi/consolas-font-for-powerline). If you are using GVim on Linux, you can install the fonts by running the `font-install.sh` script. Other pre-patched powerline fonts compatible with vim-airline are [available here](https://github.com/powerline/fonts) -- see [notes on this](https://github.com/bling/vim-airline#integrating-with-powerline-fonts) from vim-airline readme.
 
+## Other Resources
+
+- [Cool Vim goodies](http://www.k1ka.be/desidia/?UseVim)
+
 ## Inspired by
  - https://github.com/fsproru/vimfiles
