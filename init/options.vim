@@ -37,6 +37,7 @@ set smartcase               " be case sensitive when input has a capital letter
 
 set number                  " Show line numbers : http://vim.wikia.com/wiki/Display_line_numbers
 set updatetime=500          " how long to wait (in ms) before fetching type / symbol info
+set cursorline              " highlights current line : http://vim.wikia.com/wiki/Highlight_current_line
 " "}}}
 
 " Formatting "{{{
@@ -167,6 +168,7 @@ let g:syntastic_auto_loc_list = 1               " automatically load errors into
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_cs_checkers = ['syntax', 'semantic', 'issues']
+let g:syntastic_javascript_checkers = ['eslint']
 
 let NERDTreeShowBookmarks=1                 " Show the bookmarks table on startup
  " Don't display these kinds of files
@@ -176,14 +178,15 @@ let NERDTreeIgnore=[ '\.ncb$', '\.suo$', '\.obj$',
             \ '\.intermediate\.manifest$', '^mt.dep$' ]
 
 " let g:user_emmet_leader_key = '<C-S>'
-let g:user_emmet_install_global = 0
-autocmd FileType html,css EmmetInstall
+" let g:user_emmet_install_global = 0
+" autocmd FileType html,css EmmetInstall
 
-let g:ctrlp_custom_ignore = '\v[\/](\.git|node_modules|obj|bower_components|bundle|packages)$'
+let g:ctrlp_custom_ignore = '\v[\/](\.git|node_modules|obj|bower_components|bundle|packages|jspm_packages)$'
 
 "let g:OmniSharp_timeout = 1
 
 " https://github.com/othree/javascript-libraries-syntax.vim options
-let g:used_javascript_libs = 'underscore,angularjs,chai,jquery,jasmine'
+let g:used_javascript_libs = 'underscore,angularjs,chai,jquery,jasmine,react'
 
+let g:jsx_ext_required = 0  " Allow JSX in normal JS files
 " "}}}

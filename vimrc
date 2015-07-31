@@ -45,17 +45,19 @@ else
 endif
 
 " Javascript related plugins -- also see http://oli.me.uk/2013/06/29/equipping-vim-for-javascript/
-" Plugin 'pangloss/vim-javascript'
+Plugin 'pangloss/vim-javascript'
 " Plugin 'jelera/vim-javascript-syntax'
-Plugin 'othree/yajs.vim'
+" Plugin 'othree/yajs.vim'
 Plugin 'othree/javascript-libraries-syntax.vim'
+" See setting up Vim for React : https://jaxbot.me/articles/setting-up-vim-for-react-js-jsx-02-03-2015
+Plugin 'mxw/vim-jsx'
+" Plugin 'digitaltoad/vim-jade'
 
-Plugin 'digitaltoad/vim-jade'
 " This requires python
 Plugin 'marijnh/tern_for_vim'
 "Plugin 'leafgarland/typescript-vim'
 
-Plugin 'mattn/emmet-vim'
+" Plugin 'mattn/emmet-vim'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'nelstrom/vim-markdown-folding'
 
