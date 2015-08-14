@@ -15,8 +15,8 @@ C:\>choco install vim
 #### Linux/Mac:
 
 ```bash
-git clone https://github.com/lyphtec/vimfiles ~/.vim
-cd ~/.vim
+git clone https://github.com/lyphtec/vimfiles ~/.vimfiles
+cd ~/.vimfiles
 ./install.sh
 ```
 
