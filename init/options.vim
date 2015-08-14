@@ -127,8 +127,9 @@ set showfulltag             " When completing by tag, show the whole tag, not ju
 " Set up the window colors and size
 set background=dark
 
+colorscheme solarized
+
 if has("gui_running")
-    colorscheme solarized
 
     " See http://4thinker.com/vim-airline.html on how to setup vim-airline & install Consolas powerline fonts
     if has('win32') || has('win64')
@@ -148,7 +149,7 @@ if has("gui_running")
     set guioptions=cMg              " console dialogs, do not show menu and toolbar
     set guioptions-=e               " use text tab bar, not GUI
 else
-    set t_Co=256
+    "set t_Co=256
     "colorscheme wombat256
     "set term=xterm-256color
 endif
