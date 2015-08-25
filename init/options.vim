@@ -132,10 +132,13 @@ colorscheme solarized
 if has("gui_running")
 
     " See http://4thinker.com/vim-airline.html on how to setup vim-airline & install Consolas powerline fonts
+    " Source Code Pro has Powerline symbols built-in! - https://github.com/adobe-fonts/source-code-pro
     if has('win32') || has('win64')
-      set guifont=Powerline_Consolas:h9:cANSI
+      "set guifont=Powerline_Consolas:h9:cANSI
+      set guifont=Source_Code_Pro:h9:cANSI
     else
-      set guifont=Powerline\ Consolas\ 10   " for Linux gVim
+      "set guifont=Powerline\ Consolas\ 10   " for Linux gVim
+      set guifont=Source\ Code\ \Pro 10   " for Linux gVim
     endif
 
     set mousehide             " Hide the mouse pointer while typing
