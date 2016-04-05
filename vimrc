@@ -13,6 +13,10 @@ set nocompatible            " iMproved!
 set encoding=utf-8
 filetype off
 
+" Need this at the very top! -- http://stackoverflow.com/questions/8189055/vim-and-gvim-leader-key-not-working
+let mapleader = ','
+let maplocalleader = '	'      " Tab as a local leader
+
 " Vundle stuff
 if has('win32') || has('win64')
   set rtp+=~/vimfiles/bundle/vundle/
@@ -27,6 +31,8 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/syntastic'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'SirVer/ultisnips'
 Plugin 'scrooloose/nerdtree'
 Plugin 'michaeljsmith/vim-indent-object'
 Plugin 'Spaceghost/vim-matchit'
@@ -51,7 +57,7 @@ Plugin 'pangloss/vim-javascript'
 " Plugin 'othree/yajs.vim'
 Plugin 'othree/javascript-libraries-syntax.vim'
 " See setting up Vim for React : https://jaxbot.me/articles/setting-up-vim-for-react-js-jsx-02-03-2015
-Plugin 'mxw/vim-jsx'
+" Plugin 'mxw/vim-jsx'
 " Plugin 'digitaltoad/vim-jade'
 
 " This requires python

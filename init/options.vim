@@ -4,8 +4,6 @@ filetype on
 filetype plugin on
 
 let g:is_posix = 1             " vim's default is archaic bourne shell, bring it up to the 90s
-let mapleader = ','
-let maplocalleader = '	'      " Tab as a local leader
 
 set shellslash              " set the forward slash to be the slash of note.  Backslashes suck
 set timeoutlen=250          " Time to wait after ESC
@@ -173,6 +171,10 @@ let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_cs_checkers = ['syntax', 'semantic', 'issues']
 let g:syntastic_javascript_checkers = ['eslint']
+
+let g:UltiSnipsExpandTrigger = '<c-b>'
+let g:UltiSnipsJumpForwardTrigger = '<c-b>'
+let g:UltiSnipsJumpBackwardTrigger = '<c-z>'
 
 let NERDTreeShowBookmarks=1                 " Show the bookmarks table on startup
  " Don't display these kinds of files

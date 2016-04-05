@@ -4,8 +4,7 @@
 " 'jk' for <Esc> as per https://github.com/valloric/youcompleteme#i-get-weird-errors-when-i-press-ctrl-c-in-vim
 inoremap jk <Esc>
 
-nmap <silent> \n :set invhls<CR>:set hls?<CR>         " Turn off that stupid highlight search
-nmap <silent> <Space> :set invhls<CR>:set hls?<CR>
+nmap <silent> <Space> :set invhls<CR>:set hls?<CR>    " Turn off that stupid highlight search
 nmap <silent> \w :set invwrap<CR>:set wrap?<CR>       " set text wrapping toggles
 
 map <silent> <F12> :set invlist<CR>             " F12 to switch display of unprintable characters
@@ -43,6 +42,10 @@ nmap <silent> <C-l> <C-W><C-l>
 
 " Auto-indent whole file
 map <silent> <F8> mzgg=G'z :delmarks z<CR>:echo "Reformatted."<CR>
+
+" Buffers
+nnoremap <leader>l :bnext<CR>                   " Move to the next buffer
+nnoremap <leader>h :bprevious<CR>               " Move to the bprevious buffer
 
 " NERDTree
 nmap <F7>   :NERDTreeToggle<CR>             " Toggle the NERD Tree on an off with F7
