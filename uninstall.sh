@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [[ -e $HOME/.vimrc || -e $HOME/.vim || -e $HOME/.vimfiles ]]; then
+if [ -e $HOME/.vimrc ] || [ -e $HOME/.vim ] || [ -e $HOME/.vimfiles ]; then
 
   # asking for confirmation
   echo "I'll delete $HOME/.vim, $HOME/.vimfiles, and $HOME/.vimrc\n\
