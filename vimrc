@@ -47,6 +47,7 @@ Plugin 'othree/html5.vim'
 " Platform specific plugins
 if has('unix')
     "Plugin 'Valloric/YouCompleteMe'
+    Plugin 'tomasr/molokai'
 else
 
 endif

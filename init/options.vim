@@ -151,7 +151,7 @@ if has("gui_running")
     set guioptions-=e               " use text tab bar, not GUI
 else
     "set t_Co=256
-    "colorscheme wombat256
+    colorscheme molokai
     "set term=xterm-256color
 endif
 " "}}}
