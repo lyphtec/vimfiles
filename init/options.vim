@@ -34,6 +34,7 @@ set ignorecase              " be case insensitive when search
 set smartcase               " be case sensitive when input has a capital letter
 
 set number                  " Show line numbers : http://vim.wikia.com/wiki/Display_line_numbers
+set relativenumber          " Show relative line numbers : better visibility when jumping to lines with j & k keys : eg 5 j (to jump 5 lines down)
 set updatetime=500          " how long to wait (in ms) before fetching type / symbol info
 set cursorline              " highlights current line : http://vim.wikia.com/wiki/Highlight_current_line
 " "}}}
