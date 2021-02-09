@@ -79,4 +79,10 @@ filetype plugin indent on   " Automatically detect file types
 " Source init files
 runtime! init/**.vim
 
+" Neovim on windows : https://github.com/neovim/neovim/wiki/Installing-Neovim
+if has('nvim')
+    let g:python3_host_prog='C:/Users/nguyenl/envs/neovim/Scripts/python.exe'
+    let g:python_host_prog='C:/Users/nguyenl/envs/neovim/Scripts/python.exe'
+endif
+
 syntax on
